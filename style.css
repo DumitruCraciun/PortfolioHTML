@@ -931,7 +931,9 @@ footer::before {
     /* Containerul principal pe coloană */
     .contact-container {
         grid-template-columns: 1fr !important;
-        gap: 1.5rem !important;
+        gap: 1rem !important;
+        padding: 0.2rem !important;      /* Elimină padding-ul părintelui */
+        width: 100%;
     }
     
     /* Căsuțele mai înguste și padding redus */
@@ -939,15 +941,19 @@ footer::before {
     .csharp-highlight {
         width: 100%;
         max-width: 100%;
-        padding: 1.2rem;
+        padding: 0.9rem !important;
+        margin: 0.2rem;
+        box-sizing: border-box;
     }
     
     /* Grid-ul pentru item-uri redimensionat */
     .contact-item {
         grid-template-columns: 25px 55px 1fr !important;
         gap: 0.3rem !important;
+        padding: 0.2rem !important!;
         margin-bottom: 0.7rem;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem !important;
     }
     
     /* Iconițe mai mici */
@@ -960,6 +966,7 @@ footer::before {
         font-size: 0.8rem;
         letter-spacing: 0.3px;
         white-space: nowrap;
+        padding-left: 0.3rem !important;
     }
     
     /* Link-uri care se rup frumos */
