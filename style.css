@@ -944,10 +944,10 @@ footer::before {
     
     /* Grid-ul pentru item-uri redimensionat */
     .contact-item {
-        grid-template-columns: 30px 70px 1fr !important;
-        gap: 0.5rem !important;
-        margin-bottom: 1rem;
-        font-size: 0.9rem;
+        grid-template-columns: 25px 55px 1fr !important;
+        gap: 0.3rem !important;
+        margin-bottom: 0.7rem;
+        font-size: 0.85rem;
     }
     
     /* Iconițe mai mici */
@@ -964,18 +964,13 @@ footer::before {
     
     /* Link-uri care se rup frumos */
     .contact-link {
-        font-size: 0.85rem;
-        word-break: break-word;
-        hyphens: auto;
-        line-height: 1.3;
+        white-space: nowrap;        /* Forțează textul să rămână pe o linie */
+        overflow-x: auto;           /* Permite scroll orizontal DOAR pe link dacă e prea lung */
+        display: inline-block;      /* Necesar pentru a aplica restricțiile */
+        max-width: 100%;            /* Nu depăși lățimea coloanei */
+        font-size: 0.75rem;         /* Poți ajusta și mai fin aici */
     }
-    
-    /* Email-ul problematic tratat special */
-    .contact-item:first-child .contact-link {
-        font-size: 0.8rem;
-        word-break: break-all; /* Forțează ruperea la nevoie */
-    }
-    
+   
     /* Card C# mai compact */
     .csharp-card {
         flex-direction: column;
@@ -1002,6 +997,25 @@ footer::before {
     .btn-csharp {
         padding: 0.6rem 1.2rem;
         font-size: 0.85rem;
+    }
+
+      /* Butoanele pe mobil - centrate și una sub alta */
+    .project-links {
+        flex-direction: column;    /* Butoanele una sub alta */
+        align-items: center;       /* Centrare pe orizontală */
+        gap: 0.8rem;               /* Spațiu între butoane */
+        width: 100%;               /* Ocupă toată lățimea */
+    }
+    
+    .project-links .btn {
+        width: 100%;               /* Fiecare buton ocupă toată lățimea */
+        max-width: 250px;          /* Dar nu mai lat de 250px */
+        text-align: center;        /* Textul centrat în buton */
+        justify-content: center;   /* Pentru flexbox intern */
+        margin: 0 auto;            /* Asigură centrare */
+        white-space: nowrap;        /* Forțează textul pe o singură linie */
+        overflow: hidden;           /* Ascunde overflow-ul */
+        text-overflow: ellipsis;    /* Adaugă "..." dacă e prea lung */
     }
 }
 
