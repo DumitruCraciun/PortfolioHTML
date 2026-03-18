@@ -64,25 +64,6 @@ header {
   gap: 1rem;
 }
 
-.logo-img {
-  width: 50px;
-  height: 50px;
-  background: var(--gradient);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
-  transition: transform 0.3s ease;
-}
-
-.logo-img:hover {
-  transform: rotate(360deg) scale(1.1);
-}
-
 .logo-text h1 {
   font-size: 1.5rem;
   color: var(--dark);
@@ -333,57 +314,6 @@ h2::after {
   transform: translateY(-2px);
 }
 
-/* ===== SKILLS SECTION ===== */
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.skill-category {
-  background: white;
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-
-.skill-category:hover {
-  border-color: var(--primary);
-  transform: scale(1.05);
-}
-
-.skill-category h3 {
-  color: var(--primary);
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.skill-list {
-  list-style: none;
-}
-
-.skill-list li {
-  margin: 0.8rem 0;
-  padding-left: 1.5rem;
-  position: relative;
-  transition: transform 0.3s ease;
-}
-
-.skill-list li:hover {
-  transform: translateX(10px);
-}
-
-.skill-list li::before {
-  content: '▹';
-  position: absolute;
-  left: 0;
-  color: var(--secondary);
-  font-weight: bold;
-}
-
 /* ===== CONTACT SECTION ENHANCED ===== */
 #contact {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -605,22 +535,6 @@ h2::after {
     }
 }
 
-/* Dark mode support (optional) */
-@media (prefers-color-scheme: dark) {
-    .contact-info {
-        background: #1e1e2e;
-        border-color: rgba(255, 255, 255, 0.05);
-    }
-    
-    .contact-label {
-        color: #a0aec0;
-    }
-    
-    #contact {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    }
-}
-
 /* ===== DARK MODE STYLES - COMPLETE ===== */
 body.dark-mode {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -759,7 +673,7 @@ body.dark-mode .footer-bottom {
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
 }
 
-/* Asigură-te că textul din skills e vizibil */
+/* Textul din skills e vizibil */
 body.dark-mode .skill-list li,
 body.dark-mode #skills li,
 body.dark-mode [class*="skill"] li {
@@ -958,67 +872,6 @@ footer::before {
   background: var(--gradient);
 }
 
-.footer-content {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3rem;
-}
-
-.footer-section h3 {
-  margin-bottom: 1rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.footer-section ul {
-  list-style: none;
-}
-
-.footer-section ul li {
-  margin: 0.5rem 0;
-}
-
-.footer-section a {
-  color: var(--light-gray);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.footer-section a:hover {
-  color: white;
-  transform: translateX(5px);
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.social-links a {
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.social-links a:hover {
-  background: var(--gradient);
-  transform: translateY(-5px);
-}
-
 .footer-bottom {
   text-align: center;
   margin-top: 3rem;
@@ -1071,6 +924,109 @@ footer::before {
   .social-links {
     justify-content: center;
   }
+}
+
+/* ===== MOBILE FIXES - CONTACT SECTION ===== */
+@media (max-width: 768px) {
+    /* Containerul principal pe coloană */
+    .contact-container {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Căsuțele mai înguste și padding redus */
+    .contact-info,
+    .csharp-highlight {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.2rem;
+    }
+    
+    /* Grid-ul pentru item-uri redimensionat */
+    .contact-item {
+        grid-template-columns: 30px 70px 1fr !important;
+        gap: 0.5rem !important;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Iconițe mai mici */
+    .contact-icon {
+        font-size: 1.2rem;
+    }
+    
+    /* Label mai înguste */
+    .contact-label {
+        font-size: 0.8rem;
+        letter-spacing: 0.3px;
+        white-space: nowrap;
+    }
+    
+    /* Link-uri care se rup frumos */
+    .contact-link {
+        font-size: 0.85rem;
+        word-break: break-word;
+        hyphens: auto;
+        line-height: 1.3;
+    }
+    
+    /* Email-ul problematic tratat special */
+    .contact-item:first-child .contact-link {
+        font-size: 0.8rem;
+        word-break: break-all; /* Forțează ruperea la nevoie */
+    }
+    
+    /* Card C# mai compact */
+    .csharp-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .csharp-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 2rem;
+    }
+    
+    .csharp-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .csharp-content p {
+        font-size: 0.85rem;
+    }
+    
+    .btn-csharp {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== EXTRA SMALL DEVICES (under 480px) ===== */
+@media (max-width: 480px) {
+    .contact-item {
+        grid-template-columns: 25px 60px 1fr !important;
+        gap: 0.3rem !important;
+    }
+    
+    .contact-icon {
+        font-size: 1rem;
+    }
+    
+    .contact-label {
+        font-size: 0.7rem;
+    }
+    
+    .contact-link {
+        font-size: 0.75rem;
+    }
+    
+    .contact-info {
+        padding: 1rem;
+    }
 }
 
 /* ===== LOADING ANIMATION ===== */
