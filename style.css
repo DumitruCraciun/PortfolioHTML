@@ -1006,24 +1006,11 @@ footer::before {
         font-size: 0.85rem;
     }
 
-      /* Butoanele pe mobil - centrate și una sub alta */
+    /* Butoanele pe mobil - centrate și una sub alta */
     .project-links {
-        flex-direction: column;    /* Butoanele una sub alta */
-        align-items: center;       /* Centrare pe orizontală */
-        gap: 0.8rem;               /* Spațiu între butoane */
-        width: 100%;               /* Ocupă toată lățimea */
+        display: none;
     }
-    
-    .project-links .btn {
-        width: 100%;               /* Fiecare buton ocupă toată lățimea */
-        max-width: 250px;          /* Dar nu mai lat de 250px */
-        text-align: center;        /* Textul centrat în buton */
-        justify-content: center;   /* Pentru flexbox intern */
-        margin: 0 auto;            /* Asigură centrare */
-        white-space: nowrap;        /* Forțează textul pe o singură linie */
-        overflow: hidden;           /* Ascunde overflow-ul */
-        text-overflow: ellipsis;    /* Adaugă "..." dacă e prea lung */
-    }
+
 }
 
 /* ===== EXTRA SMALL DEVICES (under 480px) ===== */
