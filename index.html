@@ -30,16 +30,42 @@
     <main>
         <section id="about">
             <h2>Welcome</h2>
-            <p>I am Dumitru Craciun, a front-end developer focused on creating interactive and responsive web experiences. I build clean, efficient, and user-friendly interfaces using modern HTML, CSS, and JavaScript.</p>
-            <p>This website itself is a demonstration of my front-end skills, hand-coded to present my journey and projects in web development.</p>
+            <p>I'm Dumitru Craciun, a front-end developer with a passion for building interactive, responsive web applications. I specialise in modern tools like <strong>React</strong>, while keeping a strong foundation in vanilla HTML, CSS, and JavaScript.</p>
+            <p>This portfolio is hand-coded to showcase my journey - from <a href="https://dumitrucraciun.github.io/PortofolioCSharp/" target="_blank" rel="noopener noreferrer">C# desktop apps</a> to full-featured React projects that integrate real APIs like Last.fm and Spotify.</p>
         </section>
 
         <section id="projects">
         <h2>Front-End Projects</h2>
-        <p>Here are some of my recent web development projects, built with HTML, CSS, and JavaScript.</p>
+        <p>Recent projects built with React, JavaScript, and modern CSS. Some integrate live APIs for real-world functionality.</p>
         
         <div class="projects-grid">
-            <!-- Proiectul 1: PixelCart - E-commerce Demo -->
+            <!-- Proiectul 1: Jammming - Music Search using Last.fm API -->
+            <article class="project-card" onclick="window.open('https://dumitrucraciun.github.io/jammming/', '_blank')">
+                <div class="project-image">
+                    <img src="images/jammming-preview.jpg" alt="Jammming App Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="image-placeholder" style="display: none; background: linear-gradient(135deg, #1DB954 0%, #191414 100%); height: 200px; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                        🎵 Jammming
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Jammming — Music Playlist Manager</h3>
+                    <p class="project-subtitle">Search songs, create playlists, save locally - powered by Last.fm API.</p>
+                    <p>This React application connects to the Last.fm API to search for songs, artists, and albums. Users can build custom playlists by adding tracks from search results and save them locally. Features include real-time search, playlist management, and a modern glassmorphism UI with full responsiveness.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">JavaScript (ES6+)</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Last.fm API</span>
+                        <span class="tech-tag">Vite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://dumitrucraciun.github.io/jammming/" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
+                        <a href="https://github.com/DumitruCraciun/jammming" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Proiect: PixelCart - E-commerce Demo -->
             <article class="project-card" onclick="window.open('https://dumitrucraciun.github.io/PixelCart/', '_blank')">
                 <div class="project-image">
                     <img src="images/pixelcart-preview.jpg" alt="PixelCart E-commerce Demo Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -64,7 +90,7 @@
                 </div>
             </article>
 
-            <!-- Proiectul 2: Film Finder - Random Movie Suggester -->
+            <!-- Proiect: Film Finder - Random Movie Suggester -->
             <article class="project-card" onclick="window.open('https://dumitrucraciun.github.io/FilmFinder/', '_blank')">
                 <div class="project-image">
                     <img src="images/filmfinder-preview.jpg" alt="Film Finder App Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -91,7 +117,7 @@
                 </div>
             </article>
 
-            <!-- Proiectul 3: AikiBudo - Martial Arts School -->
+            <!-- Proiect: AikiBudo - Martial Arts School -->
             <article class="project-card" onclick="window.open('https://dumitrucraciun.github.io/AikiBudo/index.html', '_blank')">
                 <div class="project-image">
                     <img src="images/aikibudo-preview.jpg" alt="AikiBudo Martial Arts School Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -116,7 +142,7 @@
                 </div>
             </article>
 
-            <!-- Proiectul 4: Colorful Crayons - Art Workshop Studio -->
+            <!-- Proiect: Colorful Crayons - Art Workshop Studio -->
             <article class="project-card" onclick="window.open('https://dumitrucraciun.github.io/ColorfulCrayons/', '_blank')">
                 <div class="project-image">
                     <img src="images/colorfulcrayons-preview.jpg" alt="Colorful Crayons Studio Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -152,6 +178,17 @@
                 <li>REST API Integration (TMDB, external APIs)</li>
                 <li>Git & GitHub (Version control, collaboration, GitHub Pages)</li>
                 <li>Responsive Web Design</li>
+            </ul>
+        </section>
+
+        <section id="other-skills">
+            <h2>Other Skills & Technologies</h2>
+            <ul>
+                <li>C# (.NET) - Desktop applications, WinForms, automation</li>
+                <li>SQL - Database design, queries, integration</li>
+                <li>API Development & Integration</li>
+                <li>Git & GitHub Actions</li>
+                <li>Problem-Solving & System Architecture</li>
             </ul>
         </section>
 
