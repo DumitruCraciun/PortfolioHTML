@@ -39,6 +39,33 @@
             <p>Recent projects built with React, JavaScript, and modern CSS. Some integrate live APIs for real-world functionality.</p>
         
             <div class="projects-grid">
+                <!-- Proiect: Appointment Planner - Scheduling App -->
+                <article class="project-card" onclick="window.open('https://appointmentplanner-dev.netlify.app/', '_blank')">
+                    <div class="project-image">
+                        <img src="images/appointment-planner-preview.jpg" alt="Appointment Planner App Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 200px; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            📅 Appointment Planner
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Appointment Planner — Scheduling Dashboard</h3>
+                        <p class="project-subtitle">Manage contacts and appointments in a clean, responsive dashboard.</p>
+                        <p>This React application helps users organize their schedule by managing contacts and appointments on separate pages. It features a clean dashboard layout, real-time form validation, persistent data storage with local state, and a fully responsive design. Built with React Router for seamless navigation between the "Contacts" and "Appointments" sections.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">React Router</span>
+                            <span class="tech-tag">JavaScript (ES6+)</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Local Storage State</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://appointmentplanner-dev.netlify.app/" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
+                            <a href="https://github.com/DumitruCraciun/AppointmentPlanner" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+
                 <!-- Proiect: Jammming - Music Search using Last.fm API -->
                 <article class="project-card" onclick="window.open('https://music-playlist-dev.netlify.app/', '_blank')">
                     <div class="project-image">
@@ -226,7 +253,7 @@
                         <div class="csharp-content">
                             <h3>Back-End Experience</h3>
                             <p>Check out my C# desktop applications and SQL integrations</p>
-                            <a href="https://dumitrucraciun.github.io/PortofolioCSharp/" target="_blank" class="btn-csharp">
+                            <a href="https://portfolio-csharp-dev.netlify.app/" target="_blank" class="btn-csharp">
                                 View C# Portfolio <span class="arrow">→</span>
                             </a>
                         </div>
