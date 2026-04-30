@@ -30,8 +30,8 @@
     <main>
         <section id="about">
             <h2>Welcome</h2>
-            <p>I'm Dumitru Craciun, a front-end developer with a passion for building interactive, responsive web applications. I specialise in modern tools like <strong>React</strong>, while keeping a strong foundation in vanilla HTML, CSS, and JavaScript.</p>
-            <p>This portfolio is hand-coded to showcase my journey - from <a href="https://dumitrucraciun.github.io/PortofolioCSharp/" target="_blank" rel="noopener noreferrer">C# desktop apps</a> to full-featured React projects that integrate real APIs like Last.fm and Spotify.</p>
+            <p>I'm Dumitru Craciun, a front-end developer with a passion for building interactive, responsive web applications. I specialise in modern tools like React, while keeping a strong foundation in vanilla HTML, CSS, and JavaScript.</p>
+            <p>This portfolio is hand-coded to showcase my journey - from <a href="https://portfolio-csharp-dev.netlify.app/" target="_blank" rel="noopener noreferrer">C# desktop apps</a> to full-featured React projects that integrate real APIs like Last.fm and Spotify.</p>
         </section>
 
         <section id="projects">
@@ -39,6 +39,32 @@
             <p>Recent projects built with React, JavaScript, and modern CSS. Some integrate live APIs for real-world functionality.</p>
         
             <div class="projects-grid">
+                <!-- Proiect: Reddit Client - Social Media App -->
+                <article class="project-card" onclick="window.open('https://dumitrucraciun.github.io/RedditClient/', '_blank')">
+                    <div class="project-image">
+                        <img src="images/reddit-client-preview.jpg" alt="Reddit Client App Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none; background: linear-gradient(135deg, #ff4500 0%, #cc3700 100%); height: 200px; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            🔴 Reddit Client
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Reddit Client — News & Comments Aggregator</h3>
+                        <p class="project-subtitle">Explore posts, search subreddits, and read comments in real-time.</p>
+                        <p>A complete Reddit reading application that fetches live data from the Reddit API. Users can browse popular posts, search for specific subreddits, view full articles, and read nested comment threads. The app handles complex asynchronous state (loading, error, success) and features a clean responsive layout that works on both mobile and desktop. Built with a self-hosted CORS proxy to overcome API limitations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux Toolkit</span>
+                            <span class="tech-tag">React Router</span>
+                            <span class="tech-tag">Reddit API</span>
+                            <span class="tech-tag">CSS3</span>  
+                        </div>
+                        <div class="project-links">
+                            <a href="https://dumitrucraciun.github.io/RedditClient/" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
+                            <a href="https://github.com/DumitruCraciun/RedditClient" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
+                        </div>
+                    </div>
+                </article>
+
                 <!-- Proiect: Appointment Planner - Scheduling App -->
                 <article class="project-card" onclick="window.open('https://appointmentplanner-dev.netlify.app/', '_blank')">
                     <div class="project-image">
@@ -200,23 +226,25 @@
         <section id="skills">
             <h2>Front-End Skills</h2>
             <ul>
-                <li>HTML5 (Semantic elements, Forms, Accessibility)</li>
-                <li>CSS3 (Flexbox, Grid, Animations, Responsive Design)</li>
-                <li>JavaScript (ES6+, DOM manipulation, Events, Fetch API, Async/Await)</li>
-                <li>REST API Integration (TMDB, external APIs)</li>
-                <li>Git & GitHub (Version control, collaboration, GitHub Pages)</li>
-                <li>Responsive Web Design</li>
+                <li><strong>HTML5</strong> (Semantic elements, Forms, Accessibility)</li>
+                <li><strong>CSS3</strong> (Flexbox, Grid, Animations, Responsive Design)</li>
+                <li><strong>JavaScript</strong> (ES6+, DOM manipulation, Events, Fetch API, Async/Await)</li>
+                <li><strong>React</strong> (Hooks, Components, State Management, Router, Context API)</li>
+                <li><strong>REST API Integration</strong> (TMDB, external APIs)</li>
+                <li><strong>Git & GitHub</strong> (Version control, collaboration, GitHub Pages)</li>
+                <li><strong>Responsive Web Design</strong></li>
             </ul>
         </section>
 
         <section id="other-skills">
             <h2>Other Skills & Technologies</h2>
             <ul>
-                <li>C# (.NET) - Desktop applications, WinForms, automation</li>
-                <li>SQL - Database design, queries, integration</li>
-                <li>API Development & Integration</li>
-                <li>Git & GitHub Actions</li>
-                <li>Problem-Solving & System Architecture</li>
+                <li><strong>C# (.NET) - Desktop & Automation</strong> - WinForms, DLL libraries, file processing (CSV, XML, SFTP), data validation, email automation</li>
+                <li><strong>SQL & Database Systems</strong> - Relational schema design, complex queries, stored procedures, reporting, logging, data integrity</li>
+                <li><strong>Data Pipelines & ETL</strong> - Automated SFTP ingestion, validation, processing of millions of records, version tracking, file extraction</li>
+                <li><strong>Business Logic & Architecture</strong> - Multi-layer design (UI/BLL/DAL), CRUD encapsulation, OOP principles, clean code, maintainability</li>
+                <li><strong>Utility & Workflow Tools</strong> - Search & filtering, editing/export, backup & restore, scheduling, job stage tracking, client-specific DB access</li>
+                <li><strong>Problem-Solving & System Architecture</strong> - End-to-end solutions from requirements to deployment, scalable design, integration of multiple services</li>
             </ul>
         </section>
 
