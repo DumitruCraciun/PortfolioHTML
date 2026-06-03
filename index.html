@@ -39,6 +39,34 @@
             <p>Recent projects built with React, Node.js, Express, PostgreSQL, and vanilla JavaScript. Features include live API integration (Reddit, Last.fm, TMDB), custom REST APIs with Swagger documentation, and responsive modern UIs.</p>
         
             <div class="projects-grid">
+                <!-- Proiect: Get It Done - Full-Stack Task Manager -->
+                <article class="project-card" onclick="window.open('https://getitdone-dev.netlify.app', '_blank')">
+                    <div class="project-image">
+                        <img src="images/getitdone-preview.jpg" alt="Get It Done App Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 200px; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            ✅ Get It Done
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Get It Done — Full-Stack Task Manager (MVC)</h3>                        
+                        <p>A full-stack to-do list application built with the MVC architecture. Users can add, view, and delete tasks, with a content filter to block inappropriate language. The backend features a REST API (Node.js + Express), a PostgreSQL database hosted on Render, and automated table creation. The frontend is a responsive React app deployed on Netlify. This project demonstrates complete full-stack development, from database design to live deployment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Render (DB + Backend)</span>
+                            <span class="tech-tag">Netlify (Frontend)</span>
+                            <span class="tech-tag">CSS3 (Glassmorphism)</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://getitdone-dev.netlify.app" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
+                            <a href="https://github.com/DumitruCraciun/ToDoList" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
+                        </div>
+                    </div>
+                </article>
+
                 <!-- Proiect: PixelCart - Full-Stack E-commerce API + Frontend -->
                 <article class="project-card" onclick="window.open('https://pixel-cart-dev.netlify.app/', '_blank')">
                     <div class="project-image">
@@ -61,12 +89,12 @@
                             <span class="tech-tag">Render + Neon</span>
                         </div>
 
-<!-- Link-uri utile pentru demonstrarea backend-ului -->
-<div style="margin-top: 1rem; font-size: 0.85rem;">
-    🔗 <a href="https://pixelcart-backend-sjn6.onrender.com/api-docs" target="_blank" onclick="event.stopPropagation()">API Documentation (Swagger)</a>
-    &nbsp;|&nbsp;
-    <a href="https://pixelcart-backend-sjn6.onrender.com/health" target="_blank" onclick="event.stopPropagation()">API Health Check</a>
-</div>
+                        <!-- Link-uri utile pentru demonstrarea backend-ului -->
+                        <div style="margin-top: 1rem; font-size: 0.85rem;">
+                            🔗 <a href="https://pixelcart-backend-sjn6.onrender.com/api-docs" target="_blank" onclick="event.stopPropagation()">API Documentation (Swagger)</a>
+                            &nbsp;|&nbsp;
+                            <a href="https://pixelcart-backend-sjn6.onrender.com/health" target="_blank" onclick="event.stopPropagation()">API Health Check</a>
+                        </div>
 
                         <div class="project-links">
                             <a href="https://pixel-cart-dev.netlify.app/" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
@@ -236,33 +264,44 @@
         </section>
         
         <section id="skills">
-            <h2>Front-End Skills</h2>
+            <h2>Front-End Development</h2>
             <ul>
-                <li><strong>HTML5</strong> (Semantic elements, Forms, Accessibility)</li>
-                <li><strong>CSS3</strong> (Flexbox, Grid, Animations, Responsive Design)</li>
-                <li><strong>JavaScript</strong> (ES6+, DOM manipulation, Events, Fetch API, Async/Await)</li>
-                <li><strong>React</strong> (Hooks, Components, State Management, Router, Context API)</li>
-                <li><strong>REST API Integration</strong> (TMDB, external APIs)</li>
-                <li><strong>Git & GitHub</strong> (Version control, collaboration, GitHub Pages)</li>
-                <li><strong>Responsive Web Design</strong></li>
+                <li><strong>HTML5</strong> - Semantic markup, accessibility, forms</li>
+                <li><strong>CSS3</strong> - Flexbox, Grid, responsive design, animations</li>
+                <li><strong>JavaScript (ES6+)</strong> - DOM manipulation, events, async/await, modules</li>
+                <li><strong>React</strong> - Components, Hooks, Router, state management</li>
+                <li><strong>Redux Toolkit</strong> - Global state management and async actions</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Back-End & Databases</h2>
+            <ul>
+                <li><strong>Node.js & Express</strong> - REST APIs, routing, middleware</li>
+                <li><strong>PostgreSQL</strong> - Database design, normalization, optimization</li>
+                <li><strong>Authentication</strong> - Sessions, OAuth 2.0, authorization concepts</li>
+                <li><strong>API Development</strong> - REST, Swagger, OpenAPI documentation</li>
+                <li><strong>Testing</strong> - Mocha, TDD, backend and frontend testing</li>
             </ul>
         </section>
 
         <section id="other-skills">
-            <h2>Other Skills & Technologies</h2>
+            <h2>Software Engineering & Infrastructure</h2>
             <ul>
                 <li><strong>C# (.NET) - Desktop & Automation</strong> - WinForms, DLL libraries, file processing (CSV, XML, SFTP), data validation, email automation</li>
-                <li><strong>SQL & Database Systems</strong> - Relational schema design, complex queries, stored procedures, reporting, logging, data integrity</li>
-                <li><strong>Data Pipelines & ETL</strong> - Automated SFTP ingestion, validation, processing of millions of records, version tracking, file extraction</li>
-                <li><strong>Business Logic & Architecture</strong> - Multi-layer design (UI/BLL/DAL), CRUD encapsulation, OOP principles, clean code, maintainability</li>
-                <li><strong>Utility & Workflow Tools</strong> - Search & filtering, editing/export, backup & restore, scheduling, job stage tracking, client-specific DB access</li>
-                <li><strong>Problem-Solving & System Architecture</strong> - End-to-end solutions from requirements to deployment, scalable design, integration of multiple services</li>
+                <li><strong>SQL & Database Systems</strong> - Relational database design, complex queries, stored procedures, reporting, logging, data integrity</li>
+                <li><strong>Git & GitHub</strong> - Version control, repository management, branching, pull requests, collaboration workflows and source code tracking</li>
+                <li><strong>Deployment & Hosting</strong> - GitHub Pages, Netlify and Render deployment, application publishing, environment configuration and release management</li>
+                <li><strong>Web Security & APIs</strong> - REST APIs, OpenAPI/Swagger, authentication, authorization, TLS, RBAC, XSS, CSRF and SQL Injection prevention</li>
+                <li><strong>DevOps Fundamentals</strong> - CI/CD concepts, deployment pipelines, infrastructure principles, monitoring and software delivery workflows</li>
+                <li><strong>Networking & Infrastructure</strong> - CCNA-certified, TCP/IP, DNS, DHCP, VLANs, routing, switching, connectivity troubleshooting and network fundamentals</li>
+                <li><strong>Problem Solving & Software Engineering</strong> - Data structures, algorithms, debugging, system analysis, performance optimisation and end-to-end solution design</li>                
             </ul>
         </section>
 
         <section id="contact">
             <h2>Let's Connect</h2>
-            <p class="contact-intro">I'm actively building my front-end portfolio and looking for opportunities to collaborate or contribute.</p>
+            <p class="contact-intro">I'm a Software Developer with experience in C#, SQL and full-stack web development, always interested in new challenges, collaborations and learning opportunities.</p>
             
             <div class="contact-container">
                 <!-- Coloana stângă - Info personale -->
@@ -291,8 +330,8 @@
                     <div class="csharp-card">
                         <span class="csharp-icon">⚙️</span>
                         <div class="csharp-content">
-                            <h3>Back-End Experience</h3>
-                            <p>Check out my C# desktop applications and SQL integrations</p>
+                            <h3>C# .NET Projects</h3>
+                            <p>Explore my desktop applications, automation tools and database-driven solutions built with C# and SQL.</p>
                             <a href="https://portfolio-csharp-dev.netlify.app/" target="_blank" class="btn-csharp">
                                 View C# Portfolio <span class="arrow">→</span>
                             </a>
