@@ -13,7 +13,7 @@
                 <div class="logo-initials">DC</div>
                 <div class="logo-text">
                     <h1>Dumitru Craciun</h1>
-                    <p>Full-Stack Developer</p>
+                    <p>Junior Full-Stack Developer</p>
                 </div>
             </div>
             <nav>
@@ -30,15 +30,52 @@
     <main>
         <section id="about">
             <h2>Welcome</h2>
-            <p>I'm Dumitru Craciun, a full-stack developer with a passion for building complete web applications — from database design to responsive frontends. I specialize in modern tools like React and Node.js, while keeping a strong foundation in vanilla HTML, CSS, and JavaScript.</p>
-<p>This portfolio is hand-coded to showcase my journey — from <a href="https://portfolio-csharp-dev.netlify.app/" target="_blank" rel="noopener noreferrer">C# desktop apps</a> and front-end React projects to <strong>full-stack applications</strong> with custom REST APIs, PostgreSQL, JWT authentication, and Swagger documentation, all deployed live on Render and Netlify.</p>
-</section>
+            <p>I'm Dumitru Craciun, a junior developer with a passion for building web applications and continuing to grow my skills in modern web development.
+            I work with HTML, CSS, JavaScript, React, Node.js, and PostgreSQL, and I also have commercial experience in C# (.NET) application development and automation.</p>
+            <br>
+            <p>This portfolio is hand-coded to showcase my learning journey and projects - from <a href="https://portfolio-csharp-dev.netlify.app/" target="_blank" rel="noopener noreferrer">C# desktop applications</a> to React front-end projects and full-stack web applications. The projects featured here include REST APIs, PostgreSQL databases hosted on Render and Supabase, MVC architecture, environment variables, CORS, content filtering, and live deployment using Render (backend and database) and Netlify (frontend).</p>
+        </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <p>Recent projects built with React, Node.js, Express, PostgreSQL, and vanilla JavaScript. Features include live API integration (Reddit, Last.fm, TMDB), custom REST APIs with Swagger documentation, and responsive modern UIs.</p>
-        
+            <p>
+                A collection of front-end, back-end, and full-stack projects built with React, Node.js, Express, PostgreSQL, and vanilla JavaScript.
+                These projects demonstrate API integration, database-driven applications, responsive design, and deployment using Render and Netlify.
+            </p>
             <div class="projects-grid">
+
+                <!-- Project: PixelCart v2.0 - Full-Stack E-commerce with Stripe Payments -->
+                <article class="project-card" onclick="window.open('https://pixelcart-v2-dev.netlify.app', '_blank')">
+                    <div class="project-image">
+                        <img src="images/pixelcartv2-preview.jpg" alt="PixelCart v2.0 - E-commerce with Stripe" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none; background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); height: 200px; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            🛒 PixelCart v2.0
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🛒 PixelCart v2.0 — Full-Stack E-commerce with JWT Auth & Stripe</h3>
+                        <p><strong>Evolution of the PixelCart platform:</strong> from a simple REST API to a complete e-commerce ecosystem. This version introduces <strong>secure JWT authentication</strong>, a <strong>persistent shopping cart</strong> stored in the database, and <strong>Stripe payment processing</strong> (test mode). The backend (Node.js + Express) and PostgreSQL database are deployed on Render, while the React frontend is live on Netlify. Users can register, log in, add products to their cart, and complete simulated orders using Stripe test cards. The project demonstrates full-stack development with authentication, payment integration, and a production-ready modern architecture.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">React Router</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Render (Backend + DB)</span>
+                            <span class="tech-tag">Netlify (Frontend)</span>
+                            <span class="tech-tag">CSS3 (Responsive)</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pixelcart-v2-dev.netlify.app" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
+                            <a href="https://github.com/DumitruCraciun/PixelCart-frontend" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+
                 <!-- Proiect: Get It Done - Full-Stack Task Manager -->
                 <article class="project-card" onclick="window.open('https://getitdone-dev.netlify.app', '_blank')">
                     <div class="project-image">
@@ -63,6 +100,33 @@
                         <div class="project-links">
                             <a href="https://getitdone-dev.netlify.app" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
                             <a href="https://github.com/DumitruCraciun/ToDoList" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
+                        </div>
+                    </div>
+                </article>              
+
+                <!-- Proiect: Reddit Client - Social Media App -->
+                <article class="project-card" onclick="window.open('https://dumitrucraciun.github.io/RedditClient/', '_blank')">
+                    <div class="project-image">
+                        <img src="images/reddit-client-preview.jpg" alt="Reddit Client App Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none; background: linear-gradient(135deg, #ff4500 0%, #cc3700 100%); height: 200px; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            🔴 Reddit Client
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Reddit Client — News & Comments Aggregator</h3>
+                        <p class="project-subtitle">Explore posts, search subreddits, and read comments in real-time.</p>
+                        <p>A complete Reddit reading application that fetches live data from the Reddit API. Users can browse popular posts, search for specific subreddits, view full articles, and read nested comment threads. The app handles complex asynchronous state (loading, error, success) and features a clean responsive layout that works on both mobile and desktop. Built with a self-hosted CORS proxy to overcome API limitations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux Toolkit</span>
+                            <span class="tech-tag">React Router</span>
+                            <span class="tech-tag">Reddit API</span>
+                            <span class="tech-tag">CSS3</span>  
+                            <span class="tech-tag">CORS Proxy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://dumitrucraciun.github.io/RedditClient/" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
+                            <a href="https://github.com/DumitruCraciun/RedditClient" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
                         </div>
                     </div>
                 </article>
@@ -103,33 +167,6 @@
                     </div>
                 </article>
 
-                <!-- Proiect: Reddit Client - Social Media App -->
-                <article class="project-card" onclick="window.open('https://dumitrucraciun.github.io/RedditClient/', '_blank')">
-                    <div class="project-image">
-                        <img src="images/reddit-client-preview.jpg" alt="Reddit Client App Preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="image-placeholder" style="display: none; background: linear-gradient(135deg, #ff4500 0%, #cc3700 100%); height: 200px; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
-                            🔴 Reddit Client
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Reddit Client — News & Comments Aggregator</h3>
-                        <p class="project-subtitle">Explore posts, search subreddits, and read comments in real-time.</p>
-                        <p>A complete Reddit reading application that fetches live data from the Reddit API. Users can browse popular posts, search for specific subreddits, view full articles, and read nested comment threads. The app handles complex asynchronous state (loading, error, success) and features a clean responsive layout that works on both mobile and desktop. Built with a self-hosted CORS proxy to overcome API limitations.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Redux Toolkit</span>
-                            <span class="tech-tag">React Router</span>
-                            <span class="tech-tag">Reddit API</span>
-                            <span class="tech-tag">CSS3</span>  
-                            <span class="tech-tag">CORS Proxy</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://dumitrucraciun.github.io/RedditClient/" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Live Demo</a>
-                            <a href="https://github.com/DumitruCraciun/RedditClient" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
-                        </div>
-                    </div>
-                </article>
-
                 <!-- Proiect: Appointment Planner - Scheduling App -->
                 <article class="project-card" onclick="window.open('https://appointmentplanner-dev.netlify.app/', '_blank')">
                     <div class="project-image">
@@ -154,8 +191,7 @@
                             <a href="https://github.com/DumitruCraciun/AppointmentPlanner" target="_blank" class="btn btn-secondary" onclick="event.stopPropagation()">GitHub Repo</a>
                         </div>
                     </div>
-                </article>
-
+                </article>                
 
                 <!-- Proiect: Jammming - Music Search using Last.fm API -->
                 <article class="project-card" onclick="window.open('https://music-playlist-dev.netlify.app/', '_blank')">
@@ -278,31 +314,33 @@
             <h2>Back-End & Databases</h2>
             <ul>
                 <li><strong>Node.js & Express</strong> - REST APIs, routing, middleware</li>
-                <li><strong>PostgreSQL</strong> - Database design, normalization, optimization</li>
-                <li><strong>Authentication</strong> - Sessions, OAuth 2.0, authorization concepts</li>
-                <li><strong>API Development</strong> - REST, Swagger, OpenAPI documentation</li>
-                <li><strong>Testing</strong> - Mocha, TDD, backend and frontend testing</li>
+                <li><strong>PostgreSQL</strong> - Database design, normalization, queries, optimization</li>
+                <li><strong>Authentication</strong> - Sessions, JWT concepts, authorization principles</li>
+                <li><strong>API Development</strong> - REST APIs, Swagger / OpenAPI documentation</li>
+                <li><strong>Testing</strong> - Mocha, basic TDD concepts, backend testing</li>
             </ul>
         </section>
 
         <section id="other-skills">
             <h2>Software Engineering & Infrastructure</h2>
             <ul>
-                <li><strong>C# (.NET) - Desktop & Automation</strong> - WinForms, DLL libraries, file processing (CSV, XML, SFTP), data validation, email automation</li>
-                <li><strong>SQL & Database Systems</strong> - Relational database design, complex queries, stored procedures, reporting, logging, data integrity</li>
-                <li><strong>Git & GitHub</strong> - Version control, repository management, branching, pull requests, collaboration workflows and source code tracking</li>
-                <li><strong>Deployment & Hosting</strong> - GitHub Pages, Netlify and Render deployment, application publishing, environment configuration and release management</li>
-                <li><strong>Web Security & APIs</strong> - REST APIs, OpenAPI/Swagger, authentication, authorization, TLS, RBAC, XSS, CSRF and SQL Injection prevention</li>
-                <li><strong>DevOps Fundamentals</strong> - CI/CD concepts, deployment pipelines, infrastructure principles, monitoring and software delivery workflows</li>
-                <li><strong>Networking & Infrastructure</strong> - CCNA-certified, TCP/IP, DNS, DHCP, VLANs, routing, switching, connectivity troubleshooting and network fundamentals</li>
-                <li><strong>Problem Solving & Software Engineering</strong> - Data structures, algorithms, debugging, system analysis, performance optimisation and end-to-end solution design</li>                
+                <li><strong>C# (.NET) - Desktop & Automation</strong> - WinForms, DLL libraries, CSV/XML processing, SFTP, email automation</li>
+                <li><strong>SQL & Databases</strong> - Relational design, complex queries, reporting, data integrity</li>
+                <li><strong>Git & GitHub</strong> - Version control, branching, basic collaboration workflows</li>
+                <li><strong>Deployment & Hosting</strong> - GitHub Pages, Netlify, Render, environment setup</li>
+                <li><strong>Web Security</strong> - Basic understanding of authentication, authorization, and common vulnerabilities (XSS, CSRF, SQL injection awareness)</li>
+                <li><strong>DevOps Basics</strong> - CI/CD concepts and deployment workflows</li>
+                <li><strong>Networking & Infrastructure</strong> - CCNA-level knowledge: TCP/IP, DNS, DHCP, VLANs, routing and troubleshooting</li>
+                <li><strong>Problem Solving</strong> - Debugging, learning through projects, and practical software development</li>
             </ul>
         </section>
 
         <section id="contact">
             <h2>Let's Connect</h2>
-            <p class="contact-intro">I'm a Software Developer with experience in C#, SQL and full-stack web development, always interested in new challenges, collaborations and learning opportunities.</p>
-            
+           <p class="contact-intro">
+                I'm a junior Software Developer with experience in C#, SQL and full-stack web development.
+                I'm currently looking for opportunities to continue learning and contribute to real-world projects.
+            </p>
             <div class="contact-container">
                 <!-- Coloana stângă - Info personale -->
                 <div class="contact-info">
