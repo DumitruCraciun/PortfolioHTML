@@ -139,7 +139,7 @@ nav a:hover::before {
 main {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 5%;
+  padding: 2rem 5%;  
 }
 
 /* ===== SECTIONS ===== */
@@ -866,6 +866,7 @@ footer {
   margin-top: 4rem;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 footer::before {
@@ -1012,9 +1013,20 @@ footer::before {
         font-size: 0.85rem;
     }
 
-    /* Butoanele pe mobil - centrate și una sub alta */
+/* Butoanele pe mobil - centrate și una sub alta */
     .project-links {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        margin-top: 1.2rem;
+    }
+
+    .project-links .btn {
+        width: 80%;           /* Butoanele ocupă 80% din lățimea cardului */
+        max-width: 220px;
+        text-align: center;
+        justify-content: center;
     }
 
 }
